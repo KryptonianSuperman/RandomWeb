@@ -70,7 +70,7 @@ function calculateDiscount() {
 
     const totalDiscount = mobileBatteryDiscount + remoteDiscount + bulbDiscount + wireDiscount + toysDiscount + chargerDiscount + smallEItemsDiscount;
 
-    const maxDiscount = totalBill * 0.1; // Max 10% of the order value
+    const maxDiscount = totalBill; // Max 10% of the order value
     applicableDiscount = Math.min(totalDiscount, maxDiscount);
 
     document.getElementById('discount-info').innerText = `You get a discount of Rs. ${applicableDiscount} on your BigBasket order.`;
